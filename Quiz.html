@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 500%;
+      }
+      .overskrift1 {
+        font-size: 40%;
+      }
+
+      .Spørsmål {
+        text-align: center;
+        font-size: 120%;
+      }
+
+      #image {
+        align-self: center;
+        width: 500px;
+        imag
+              }
+    </style>
+    <title>Quiz Hjørnet</title>
+  </head>
+  <body>
+    <h1>
+      Sebastian's Lille Quiz!
+      <div class="overskrift1">(med stor font )</div>
+    </h1>
+    <div class="Spørsmål">
+      <h3>Hvor gammel er jeg?</h3>
+
+      <button onclick="feil()">23</button>
+      <button onclick="riktig()">24</button>
+      <button onclick="feil()">25</button>
+      <div id="overskrift"></div>
+    </div>
+
+    <img id="image" />
+    <script>
+      function feil() {
+        document.getElementById("overskrift").innerHTML = "Feil!";
+      }
+
+      function riktig() {
+        document.getElementById("overskrift").innerHTML = "Korrekt!";
+        document
+          .getElementById("image")
+          .setAttribute(
+            "src",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2orngalDF2INxVJbShyWpCNj2i9wrrX1uDA&usqp=CAU"
+          );
+      }
+    </script>
+  </body>
+</html>
